@@ -1,9 +1,9 @@
 body {
-    margin: -0.5em; /* -8px */
+    margin: -0.5em; 
 }
 
 header {
-    padding: 1.25em 7.5em; /* 20px 120px */
+    padding: 1.25em 7.5em; 
     background-color: #d9d9d9;
     display: flex;
     justify-content: space-between;
@@ -12,26 +12,26 @@ header {
 
 .left {
     display: flex;
-    gap: 2.5em; /* 40px */
+    gap: 2.5em; 
 }
 
 .name {
     color: #000000;
-    font-size: 2.25em; /* 36px */
+    font-size: 2.25em;
     font-weight: 500;
     font-family: 'VT323', monospace;
 }
 
 .nav {
-    padding-top: 0.375em; /* 6px */
+    padding-top: 0.375em; 
     font-family: 'Share Tech Mono', monospace;
     display: flex;
-    gap: 1.25em; /* 20px */
+    gap: 1.25em; 
 }
 
 .nav a {
     color: #000000;
-    font-size: 1.625em; /* 26px */
+    font-size: 1.625em; 
     transition: transform 0.3s;
 }
 
@@ -40,8 +40,8 @@ header {
 }
 
 .button {
-    padding-top: 0.5em; /* 8px */
-    width: 3em; /* 48px */
+    padding-top: 0.5em; 
+    width: 3em; 
     cursor: pointer;
     transition: transform 0.3s;
 }

@@ -10,6 +10,13 @@
     justify-content: space-between;
     gap:50px;
 }
+.all2
+{
+     display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    gap:50px;
+}
 
 .block
 {
