@@ -1,0 +1,73 @@
+
+.body
+{
+    margin: 30px 50px;
+
+}
+.all{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-between;
+    gap:50px;
+}
+
+.block
+{
+    margin-top: 30px;
+    padding: 30px 30px;
+background-color: #f1f1f1;
+border-radius: 15px;
+display: flex;
+flex-direction: column;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.block:hover{
+ box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+background-color: #f4f4f4;
+ }
+ 
+.photo 
+{
+width: 300px;
+border-radius: 15px;
+align-self: center;
+}
+
+.textblock{
+    padding-top: 30px;
+     display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
+
+.textblockitem
+{
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.name
+{
+    display: flex;
+    align-self: center;
+    padding-top: 30px;
+    font-size: 32px;
+    font-weight: 500px;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.text
+{
+    font-size: 20px;
+    font-family:'Chivo',monospace;
+}
+
+.icon
+{
+    width: 16px;
+     align-self: center; 
+}
+
+
