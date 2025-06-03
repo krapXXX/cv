@@ -13,8 +13,10 @@ export class MainComponent {
     name: 'Arina Krapivna',
     role: 'Web Developer',
     location: 'Odesa, Ukraine 65000',
-    email: 'arina.krapivnaya.gmail.com',
+    email: 'arina.krapivnaya@gmail.com',
     phone: '+380661937598',
+    git: 'https://github.com/ArynaKrapivna',
+    linkedin:'https://www.linkedin.com/in/aryna-krapivna-b93407334/',
     photo: '/photo.jpg',
   };
 
@@ -59,11 +61,24 @@ French: B1 (Beginner)<br>
     date: '(09/2023 – Present)',
   };
 
-  projects = [
-  { name: 'GitHub', descrlink: 'https://github.com/ArynaKrapivna' },
-  { name: 'Task Manager App', link: 'https://your-task-manager.netlify.app' }
+ projects = [
+  { name: 'Client_Server', description: 'A project demonstrating socket communication via WinSocketChat.', link: 'https://github.com/krapXXX/Client_Server/tree/main/WinSocketChat' },
+  { name: 'System_Programming', description: 'Contains the TicTacToe game project under System_Programming.', link: 'https://github.com/krapXXX/System_Programming/tree/master/TicTac' },
+  { name: 'OOP', description: 'Features the AmericanBase project focused on object-oriented programming.', link: 'https://github.com/ArynaKrapivna/AmericanBase' },
+  { name: 'HTML/CSS', description: 'Final project for web layout and design using HTML and CSS.', link: 'https://krapxxx.github.io/final-/' },
+  { name: 'JS', description: 'JavaScript final project demonstrating DOM manipulation.', link: 'https://krapxxx.github.io/JS-fin/' },
+  { name: 'Angular', description: 'Angular-based clone of a landing.', link: 'https://github.com/' },
+  { name: 'Wokwi', description: 'TicTacToe in Wokwi(C++). Collaborated in a team of 4 with designers and developers; won 1st place at the university level.', link: 'https://www.canva.com/design/DAGGmzvpiVA/yeVg0WbRi_IZA2DhlQKu5g/edit' },
+  { name: 'GitHub', link: 'https://github.com/ArynaKrapivna' }
 ];
+today = new Date();
 
+isDarkTheme = false;
+
+  toggleTheme(): void {
+    this.isDarkTheme = !this.isDarkTheme;
+  }
+  
 }
 
  

@@ -6,12 +6,15 @@
             <a >Skills</a>
             <a >Education</a>
             <a>Projects</a>
-            <a >Contacts</a>
-
         </nav>
     </div>
     <div class = "right">
-        <img src = "/lightmode.png" class = "button">
+       <img
+  class="button"
+  [src]="isDark ? '/darkmode.png' : '/lightmode.png'"
+  alt="Toggle Theme"
+  (click)="themeToggle.emit()"
+/>
     </div>
 </header>
 </body>

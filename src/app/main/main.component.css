@@ -1,7 +1,10 @@
-.body {
-    margin: 0 3.125em;
-}
 
+
+.body {
+  margin: 0 3.125em;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
 .all {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -19,7 +22,9 @@
 .block {
     margin-top: 1.875em;
     padding: 1.875em;
-    background-color: #f1f1f1;
+      background-color: var(--block-bg);
+  color: var(--text-color);
+
     border-radius: 0.9375em;
     display: flex;
     flex-direction: column;
@@ -28,7 +33,7 @@
 
 .block:hover {
     box-shadow: 0 0.5em 0.75em rgba(0, 0, 0, 0.2);
-    background-color: #f4f4f4;
+     background-color: var(--block-hover-bg);
 }
 
 .photo {
@@ -92,12 +97,12 @@
 {
     font-size: 1.25em;
     font-family: 'Chivo', monospace;
-    color: #888888;
+    opacity: 60%;
     padding-top: 0.5em;
 }
 
 a {
-  color: #000000;
+  color: var(--link-color);
   text-decoration: none;
   font-size:1.25em;
    font-family: 'Chivo', monospace;
@@ -105,4 +110,33 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.proj-name
+{
+     font-size: 1.2em;
+    font-weight: 500;
+    font-family: 'Share Tech Mono', monospace;
+    padding-top: 0.5em;
+
+}
+
+.proj-details
+{
+    font-size: 1em;
+    font-family: 'Chivo', monospace;
+    padding-top: 0.2em;
+    opacity: 60%;
+
+}
+
+.name,
+.text,
+.education-title,
+.education-address,
+.education-details,
+.education-date,
+.proj-name,
+.proj-details {
+  color: var(--text-color);
 }

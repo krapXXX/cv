@@ -1,2 +1,8 @@
-<app-header></app-header>
-<app-main></app-main>
+<div [ngClass]="isDarkTheme ? 'dark-theme' : 'light-theme'">
+  <app-header
+    [isDark]="isDarkTheme"
+    (themeToggle)="toggleTheme()"
+  ></app-header>
+
+  <app-main></app-main>
+</div>

@@ -1,13 +1,16 @@
+
+
 body {
     margin: -0.5em; 
 }
 
 header {
     padding: 1.25em 7.5em; 
-    background-color: #d9d9d9;
     display: flex;
     justify-content: space-between;
     align-items: center;
+     background-color: var(--header-bg);
+  color: var(--header-text);
 }
 
 .left {
@@ -16,10 +19,10 @@ header {
 }
 
 .name {
-    color: #000000;
     font-size: 2.25em;
     font-weight: 500;
     font-family: 'VT323', monospace;
+    color: var(--header-text);
 }
 
 .nav {
@@ -30,8 +33,8 @@ header {
 }
 
 .nav a {
-    color: #000000;
     font-size: 1.625em; 
+     color: var(--link-color);
     transition: transform 0.3s;
 }
 
