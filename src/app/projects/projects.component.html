@@ -1,0 +1,26 @@
+<div class ="body">
+<div class ="body2">  
+    <div class = "space">
+
+    <div class="block">
+ <div class="textblock" style = "padding-top: 0;">
+  <div class="textblockitem"  style = "padding-top: 0;">
+    <img src="/projects.png" class="icon" style="width: 2em;" >
+    <div class="name"style = "padding-top: 0;">Projects</div>
+  </div>
+  </div>
+  <div class="text" style="height: 100%; display: flex; align-items: center">
+       <ul>
+  <li *ngFor="let project of projects">
+    <a [href]="project.link" target="_blank" rel="noopener">
+      <div class = "proj-name">{{ project.name }}</div>
+    </a>
+      <div class = "proj-details">{{project.description}}</div>
+
+  </li>
+</ul>
+</div>
+</div>
+  </div>
+</div>
+</div>

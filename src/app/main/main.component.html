@@ -1,4 +1,6 @@
 <div class ="body">
+<div class ="body2">
+
     <div class = "all">
 
 <div class="block">
@@ -78,55 +80,7 @@
 </div>
 </div>
 </div>
-<!-- changing grid -->
-<div class="block">
- <div class="textblock" style = "padding-top: 0;">
-  <div class="textblockitem"  style = "padding-top: 0;">
-    <img src="/skills.png" class="icon" style="width: 2em;" >
-    <div class="name"style = "padding-top: 0;">Skills</div>
-  </div>
-  </div>
-  <div class="text" style="padding-top: 1.875em;height: 100%; display: flex; align-items: center" [innerHTML]="skills">
-  </div>
+
+
+
 </div>
-
-
-<div class="block">
- <div class="textblock" style = "padding-top: 0;">
-  <div class="textblockitem"  style = "padding-top: 0;">
-    <img src="/education.png" class="icon" style="width: 2em;" >
-    <div class="name"style = "padding-top: 0;">Education</div>
-  </div>
-  </div>
-  <div class="text" style="padding-top: 1.875em;height: 100%; display: flex; align-items: center">
-
-      <div class="education-item">
-        <div class="education-title">{{ edu.title }}</div>
-        <div class="education-address">{{ edu.address }}</div>
-        <div class="education-details">{{ edu.details }}</div>
-        <div class="education-date">{{ edu.date }}</div>
-    </div>
-  </div>
-</div>
-
-  <div class="block">
- <div class="textblock" style = "padding-top: 0;">
-  <div class="textblockitem"  style = "padding-top: 0;">
-    <img src="/projects.png" class="icon" style="width: 2em;" >
-    <div class="name"style = "padding-top: 0;">Projects</div>
-  </div>
-  </div>
-  <div class="text" style="height: 100%; display: flex; align-items: center">
-       <ul>
-  <li *ngFor="let project of projects">
-    <a [href]="project.link" target="_blank" rel="noopener">
-      <div class = "proj-name">{{ project.name }}</div>
-    </a>
-      <div class = "proj-details">{{project.description}}</div>
-
-  </li>
-</ul>
-  </div>
-</div>
-
-<

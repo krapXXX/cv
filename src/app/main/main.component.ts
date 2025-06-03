@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common'; // ✅ обов’язково
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-main',
   standalone: true, // ✅ обов’язково для використання без NgModule
-  imports: [CommonModule], // ✅ потрібен для *ngIf, *ngFor
+ imports: [CommonModule, RouterModule],
+ // ✅ потрібен для *ngIf, *ngFor
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.css']
 })
@@ -17,7 +19,7 @@ export class MainComponent {
     phone: '+380661937598',
     git: 'https://github.com/ArynaKrapivna',
     linkedin:'https://www.linkedin.com/in/aryna-krapivna-b93407334/',
-    photo: '/photo.jpg',
+    photo: '/photome.jpg',
   };
 
 aboutMe = `
@@ -42,35 +44,7 @@ English: C1 (Intermediate)<br>
 French: B1 (Beginner)<br>
   `];
 
-  skills = [
-    `C++(OOP) STL Solid C++(Procedure)<br>
-    HTM CSS JavaScript<br>
-    AngularReact<br>
-    System Programming<br><br>
-    
-    Visual Studio Visual Studio Code SCV-Git GitHub<br><br>
-    
-    Photoshop Illustrator<br>
-    System analysis`
-  ];
-
-   edu = {
-    title: 'IT STEP University',
-    address: 'Odesa, Ukraine',
-    details: 'Bachelor of Computer Science',
-    date: '(09/2023 – Present)',
-  };
-
- projects = [
-  { name: 'Client_Server', description: 'A project demonstrating socket communication via WinSocketChat.', link: 'https://github.com/krapXXX/Client_Server/tree/main/WinSocketChat' },
-  { name: 'System_Programming', description: 'Contains the TicTacToe game project under System_Programming.', link: 'https://github.com/krapXXX/System_Programming/tree/master/TicTac' },
-  { name: 'OOP', description: 'Features the AmericanBase project focused on object-oriented programming.', link: 'https://github.com/ArynaKrapivna/AmericanBase' },
-  { name: 'HTML/CSS', description: 'Final project for web layout and design using HTML and CSS.', link: 'https://krapxxx.github.io/final-/' },
-  { name: 'JS', description: 'JavaScript final project demonstrating DOM manipulation.', link: 'https://krapxxx.github.io/JS-fin/' },
-  { name: 'Angular', description: 'Angular-based clone of a landing.', link: 'https://github.com/' },
-  { name: 'Wokwi', description: 'TicTacToe in Wokwi(C++). Collaborated in a team of 4 with designers and developers; won 1st place at the university level.', link: 'https://www.canva.com/design/DAGGmzvpiVA/yeVg0WbRi_IZA2DhlQKu5g/edit' },
-  { name: 'GitHub', link: 'https://github.com/ArynaKrapivna' }
-];
+  
 today = new Date();
 
 isDarkTheme = false;
@@ -78,7 +52,7 @@ isDarkTheme = false;
   toggleTheme(): void {
     this.isDarkTheme = !this.isDarkTheme;
   }
-  
+
 }
 
  

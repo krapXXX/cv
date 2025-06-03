@@ -1,10 +1,11 @@
 
 
-body {
+.body {
     margin: -0.5em; 
 }
 
 header {
+
     padding: 1.25em 7.5em; 
     display: flex;
     justify-content: space-between;
@@ -33,6 +34,7 @@ header {
 }
 
 .nav a {
+    text-decoration: none;
     font-size: 1.625em; 
      color: var(--link-color);
     transition: transform 0.3s;

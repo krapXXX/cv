@@ -4,18 +4,29 @@
   --text-color: #000000;
   --block-bg: #eaeaea;
   --block-hover-bg: #f1f0f0;
-  --header-bg: #d1cfcf;
+  --header-bg: #e8e8e8;
   --header-text: #000000;
   --link-color: #000000;
+  --shadow: rgba(0, 0, 0, 0.2);
+   --icon-filter: none;
 }
 
 /* 🌙 Dark Theme */
 .dark-theme {
   --bg-color: #121212;
   --text-color: #f5f5f5;
-  --block-bg: #1e1e1e;
-  --block-hover-bg: #2a2a2a;
+  --block-bg: #2b2b2b;
+  --block-hover-bg: #373737;
   --header-bg: #1f1f1f;
   --header-text: #ffffff;
   --link-color: #9fd7ff;
+  --shadow: rgba(255, 255, 255, 0.1);
+   --icon-filter: invert(1);
 }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+

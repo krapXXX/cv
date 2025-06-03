@@ -1,13 +1,29 @@
 
 
 .body {
-  margin: 0 3.125em;
+         min-height: 100vh;
+
+  margin: 0 -0.5em;
   color: var(--text-color);
   background-color: var(--bg-color);
 }
+.body2
+{
+    height: 100%;
+
+    margin:0 3.125em;
+}
 .all {
+    
     display: grid;
     grid-template-columns: 1fr 2fr;
+    justify-content: space-between;
+    gap: 3.125em;
+}
+.space
+{
+     display: grid;
+    grid-template-columns: 1fr;
     justify-content: space-between;
     gap: 3.125em;
 }
@@ -28,11 +44,11 @@
     border-radius: 0.9375em;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.25em 0.5em var(--shadow);
 }
 
 .block:hover {
-    box-shadow: 0 0.5em 0.75em rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5em 0.75em var(--shadow);
      background-color: var(--block-hover-bg);
 }
 
@@ -72,7 +88,9 @@
 .icon {
     width: 1em;
     align-self: center;
+     filter: var(--icon-filter);
 }
+
 
 .education-title {
     text-decoration: underline;
