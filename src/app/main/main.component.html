@@ -1,93 +1,114 @@
-<div class = "body">
-<div class="all">
-    <div class="block">
-        <img src="/photo.jpg" class="photo">
-        <div class="name">Arina Krapivna</div>
+<div class ="body">
+    <div class = "all">
 
-        <div class="textblock">
-            <div class="textblockitem">
-                <img src="/user.png" class="icon">
-                <div class="text">Web Develover</div>
-            </div>
-            <div class="textblockitem">
-                <img src="/location.png" class="icon">
-                <div class="text">Odesa, Ukraine 65000</div>
-            </div>
-            <div class="textblockitem">
+<div class="block">
+  <img [src]="user.photo" class="photo">
+  <div class="name">{{ user.name }}</div>
 
-                <img src="/email.png" class="icon">
-                <div class="text">arina.krapivnaya.gmail.com</div>
-            </div>
-            <div class="textblockitem">
-
-                <img src="/phone.png" class="icon">
-                <div class="text">+380661937598</div>
-            </div>
-        </div>
+  <div class="textblock">
+    <div class="textblockitem">
+      <img src="/user.png" class="icon" />
+      <div class="text">{{ user.role }}</div>
     </div>
-    <div class="block">
-
-        <div class="textblock" style = "padding-top: 0;">
-            <div class="textblockitem"  style = "padding-top: 0;">
-                <img src="/user.png" class="icon" style="width:32px ;">
-                <div class="name"  style = "padding-top: 0;">About me</div>
-            </div>
-        </div>
-
-       <div class="text" style="height: 100%; display: flex; align-items: center;">
-I’m a Front-End Developer passionate about crafting intuitive and responsive web interfaces
-            using HTML, CSS, and JavaScript. I enjoy translating ideas into digital experiences, ensuring both
-            functionality and aesthetics in every project.
-<br><br>
-            My skillset includes strong knowledge of C++, system programming, and tools like Visual Studio, Photoshop,
-            and Git. I have experience building applications both individually and collaboratively — including games,
-            dynamic classes, and web solutions.
-<br><br>
-        Currently, I’m a second-year student at IT STEP University in Odesa, where I continuously develop my
-            technical expertise and soft skills like teamwork, public speaking, and analytical thinking.
-<br><br>
-            I’m open to opportunities where I can contribute to impactful projects, collaborate with creative teams, and
-            continue growing as a developer.</div>
+    <div class="textblockitem">
+      <img src="/location.png" class="icon" />
+      <div class="text">{{ user.location }}</div>
     </div>
+    <div class="textblockitem">
+      <img src="/email.png" class="icon" />
+      <div class="text">{{ user.email }}</div>
+    </div>
+    <div class="textblockitem">
+      <img src="/phone.png" class="icon" />
+      <div class="text">{{ user.phone }}</div>
+    </div>
+  </div>
+</div>
+
+<div>
+<div class="block">
+     <div class="textblock" style = "padding-top: 0;">
+  <div class="textblockitem" style = "padding-top: 0;">
+    <img src="/user.png" class="icon" style="width: 2em;" />
+    <div class="name" style ="padding-top: 0;">About me</div>
+  </div>
+  </div>
+
+  <div class="text" style="padding-top: 1.5em;height: 100%; display: flex; align-items: center" [innerHTML]="aboutMe">
+  </div>
 </div>
 
 <div class = "all2">
-<div class ="block">
-     <div class="textblock" style = "padding-top: 0;">
-            <div class="textblockitem"  style = "padding-top: 0;">
-                <img src="/lang.png" class="icon" style="width:32px ;">
-                <div class="name"  style = "padding-top: 0;">Languages</div>
-            </div>
-        </div>
-        <div class="text" style="height: 100%; display: flex; align-items: center;padding-top: 30px;">
-         Ukrainian:Native<br> 
-         English:C1
-          <br>
-French:B1
-<br>
+<div class="block">
+    <div class="textblock" style = "padding-top: 0;">
+  <div class="textblockitem"  style = "padding-top: 0;">
+    <img src="/soft.png" class="icon" style="width: 2em;" >
+    <div class="name"style = "padding-top: 0;">Soft Skills</div>
+  </div>
+  </div>
+    <div class="text" style="padding-top: 1.5em;height: 100%; display: flex; align-items: center" [innerHTML]="softSkills">
+  </div>
+  </div>
+
+<div class="block">
+    <div class="textblock" style = "padding-top: 0;">
+  <div class="textblockitem"  style = "padding-top: 0;">
+    <img src="/lang.png" class="icon" style="width: 2em;" >
+    <div class="name"style = "padding-top: 0;">Languages</div>
+  </div>
+  </div>
+   <div class="text" style="padding-top: 1.5em;height: 100%; display: flex; align-items: center" [innerHTML]="languages">
+  </div>
 </div>
+</div>
+</div>
+</div>
+<!-- changing grid -->
+<div class="block">
+ <div class="textblock" style = "padding-top: 0;">
+  <div class="textblockitem"  style = "padding-top: 0;">
+    <img src="/skills.png" class="icon" style="width: 2em;" >
+    <div class="name"style = "padding-top: 0;">Skills</div>
+  </div>
+  </div>
+  <div class="text" style="padding-top: 1.875em;height: 100%; display: flex; align-items: center" [innerHTML]="skills">
+  </div>
 </div>
 
-<div class = "block">
-    
-</div>
-</div>
-<div class ="block">
-     <div class="textblock" style = "padding-top: 0;">
-            <div class="textblockitem"  style = "padding-top: 0;">
-                <img src="/skills.png" class="icon" style="width:32px ;">
-                <div class="name"  style = "padding-top: 0;">Skills</div>
-            </div>
-        </div>
-        <div class="text" style="height: 100%; display: flex; align-items: center;padding-top: 30px;">
-          <br>
-            C++(OOP) | STL | Solid | C++(Procedure)<br>
-HTML | CSS | JavaScript<br>
-System Programming<br>
-Photoshop | Illustrator <br>
-<br><br>
 
-Visual Studio | Visual Studio Code | SCV-Git | GitHub
-<br>
-System analysis</div>
+<div class="block">
+ <div class="textblock" style = "padding-top: 0;">
+  <div class="textblockitem"  style = "padding-top: 0;">
+    <img src="/education.png" class="icon" style="width: 2em;" >
+    <div class="name"style = "padding-top: 0;">Education</div>
+  </div>
+  </div>
+  <div class="text" style="padding-top: 1.875em;height: 100%; display: flex; align-items: center">
+
+      <div class="education-item">
+        <div class="education-title">{{ edu.title }}</div>
+        <div class="education-address">{{ edu.address }}</div>
+        <div class="education-details">{{ edu.details }}</div>
+        <div class="education-date">{{ edu.date }}</div>
+    </div>
+  </div>
+</div>
+
+  <div class="block">
+ <div class="textblock" style = "padding-top: 0;">
+  <div class="textblockitem"  style = "padding-top: 0;">
+    <img src="/projects.png" class="icon" style="width: 2em;" >
+    <div class="name"style = "padding-top: 0;">Projects</div>
+  </div>
+  </div>
+  <div class="text" style="padding-top: 1.875em;height: 100%; display: flex; align-items: center">
+    <ul>
+  <li *ngFor="let project of projects">
+    <a [href]="project.link" target="_blank" rel="noopener">
+      {{ project.name }}
+    </a>
+  </li>
+</ul>
+
+  </div>
 </div>
